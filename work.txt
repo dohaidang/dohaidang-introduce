@@ -1,0 +1,47 @@
+Đỗ Hải Đăng
+=========
+
+DevOps Engineer @ VTNET (Viettel Network)
+Software Engineering | DevOps | Infrastructure Automation
+
+About
+-----
+
+Tôi là một Kỹ sư phần mềm có định hướng chuyên sâu vào tối ưu hóa vận hành và hạ tầng hệ thống (DevOps). 
+Với nền tảng từ chuyên ngành Kỹ thuật phần mềm tại Đại học FPT, tôi đã từng bước chuyển dịch từ vai trò 
+phát triển ứng dụng di động (Mobile Developer) sang quản lý và vận hành hệ thống quy mô lớn tại VTNET. 
+Tôi luôn ưu tiên sự ổn định, tính bảo mật và hiệu suất trong mọi giải pháp kỹ thuật.
+
+Experience
+-----------
+
+* VTNET (Viettel Network) | DevOps Engineer
+  Tập trung vào việc triển khai, vận hành và tự động hóa hạ tầng mạng lưới viễn thông.
+
+* SchoolDX | Mobile App Developer
+  Phát triển các giải pháp phần mềm trong hệ sinh thái chuyển đổi số giáo dục.
+
+* Icetea Software | Software Engineer Intern
+  Tham gia nghiên cứu và phát triển các dự án phần mềm chuyên nghiệp trong giai đoạn thực tập.
+
+Skills & Development
+---------------------
+
+* DevOps & Infrastructure: Automation, CI/CD, System Operations
+* Software Engineering: Mobile Development, System Design
+* Languages: Vietnamese (Native), English (Professional)
+
+Personal Growth
+---------------
+
+* Năng lực ngoại ngữ: Hoàn thành chương trình tiếng Anh tại Little UK (2021)
+* Kỹ năng cộng đồng: Hỗ trợ VnExpress Marathon, điều phối sinh viên (F-Camp)
+* Thể thao: Boxing, Kickfit, Gym
+* Cân bằng: Đọc sách, âm nhạc, du lịch trải nghiệm
+
+Contact
+-------
+
+* [Email: dohaidang321@gmail.com]
+* [GitHub: @dohaidang]
+* [LinkedIn: linkedin.com/in/dohaidang202]  
