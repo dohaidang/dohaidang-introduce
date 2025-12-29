@@ -22,14 +22,9 @@
   margin: 0px;
 }
 
-/**
- * That's better.
- *
- * PGP keys section disabled.
- */
 
 #pgp-text {
-  display: none; /* PGP key disabled */
+  display: none; 
   font-size: 12px;
   color: #ada;
 }
