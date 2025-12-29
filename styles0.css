@@ -96,6 +96,14 @@ body {
 }
 
 /**
+ * Make the work-text box taller, matching the style-text height.
+ */
+
+#work-text {
+  max-height: 93.1vh;
+}
+
+/**
  * So, let's talk projects. That's why you're here, right?
  * I can't imagine you'd come just to see the pretty colors.
  */
