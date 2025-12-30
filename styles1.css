@@ -25,3 +25,113 @@
  * Okay here we go!
  *
  */
+
+/**
+ * Thêm transition mượt mà cho body để chuyển màu từ từ
+ */
+
+body {
+  -webkit-transition: background-color 2s ease, color 2s ease;
+  transition: background-color 2s ease, color 2s ease;
+}
+
+/**
+ * Chuyển sang Light Mode - Nền trắng, chữ đen
+ */
+
+html {
+  background: rgb(255, 255, 255);
+}
+
+pre, a {
+  color: rgb(0, 0, 0);
+}
+
+pre:not(:empty) {
+  background: rgb(250, 250, 250);
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.comment {
+  color: #6B6B6B;
+  font-style: italic;
+}
+
+.selector {
+  color: #D97706;
+}
+
+.selector .key {
+  color: #0369A1;
+}
+
+.key {
+  color: #0369A1;
+}
+
+.value {
+  color: #7C3AED;
+}
+
+.value.px {
+  color: #DC2626;
+}
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+  color: #1F2937;
+  border-bottom: 1px solid #9CA3AF;
+}
+
+/**
+ * Thử nghiệm giao diện sáng - Xem thế nào nhé!
+ * 
+ * Hmm... có vẻ quá sáng cho mắt. 
+ * Dark Mode vẫn chuyên nghiệp và dễ nhìn hơn.
+ * 
+ * Chuyển lại về Dark Mode thôi!
+ */
+
+html {
+  background: rgb(63, 82, 99);
+}
+
+pre, a {
+  color: white;
+}
+
+pre:not(:empty) {
+  background: rgb(48, 48, 48);
+  border: 1px solid #ccc;
+  box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.comment {
+  color: #857F6B;
+  font-style: italic;
+}
+
+.selector {
+  color: #E69F0F;
+}
+
+.selector .key {
+  color: #64D5EA;
+}
+
+.key {
+  color: #64D5EA;
+}
+
+.value {
+  color: #BE84F2;
+}
+
+.value.px {
+  color: #F92772;
+}
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+  color: #ddd;
+  border-bottom: 1px solid #ccc;
+}
