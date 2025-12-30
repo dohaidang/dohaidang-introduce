@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack serve --host 0.0.0.0 --port 4003",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack serve --open",
     "watch": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack --progress --watch"
