@@ -13,6 +13,43 @@ pre {
   border-radius: 1px; /* Prevents bad clipping in Chrome */
 }
 
+/* Custom scrollbars for scrollable areas (style-text, work-text, etc.) */
+
+pre,
+#style-text,
+#work-text {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #9ca3af transparent; /* light gray */
+}
+
+/* WebKit-based browsers (Chrome, Edge, Safari) */
+pre::-webkit-scrollbar,
+#style-text::-webkit-scrollbar,
+#work-text::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+pre::-webkit-scrollbar-track,
+#style-text::-webkit-scrollbar-track,
+#work-text::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+pre::-webkit-scrollbar-thumb,
+#style-text::-webkit-scrollbar-thumb,
+#work-text::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* light gray */
+  border-radius: 999px;
+}
+
+pre::-webkit-scrollbar-thumb:hover,
+#style-text::-webkit-scrollbar-thumb:hover,
+#work-text::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280; /* darker gray on hover */
+}
+
 #content {
   position: absolute;
   top: 0; right: 0; left: 0; bottom: 20px;
