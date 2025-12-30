@@ -77,11 +77,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Author
 
 **Do Hai Dang**
-
-- DevOps Engineer @ VTNET (Viettel Network)
 - GitHub: [@dohaidang](https://github.com/dohaidang)
-- LinkedIn: [Your LinkedIn Profile]
-
 ---
 
 Built with love using modern web technologies
