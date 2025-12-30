@@ -27,6 +27,24 @@ pre {
   padding: 0 10px;
 }
 
+/* Inline controls next to Pause in header */
+
+#speed-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 10px;
+  font-size: 11px;
+}
+
+#speed-control label {
+  font-family: monospace;
+}
+
+#speed-range {
+  vertical-align: middle;
+}
+
 a:after {
   content: '';
   padding-right: 5px;

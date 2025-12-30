@@ -12,8 +12,7 @@ import {default as writeChar, writeSimpleChar, handleChar} from './lib/writeChar
 import getPrefix from './lib/getPrefix';
 
 // Vars that will help us get er done
-const isDev = window.location.hostname === 'localhost';
-const speed = isDev ? 0 : 16;
+let speed = 16; // Typing speed in ms, controlled by the speed slider
 let style, styleEl, workEl, /* pgpEl, */ skipAnimationEl, pauseEl; // PGP key disabled
 let animationSkipped = false, done = false, paused = false;
 let browserPrefix;
@@ -24,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   populateHeader();
   getEls();
   createEventHandlers();
+  attachSpeedControl();
   startAnimation();
 });
 
@@ -37,6 +37,7 @@ async function startAnimation() {
     await writeTo(styleEl, styleText[2], 0, speed, true, 1);
     // await writeTo(pgpEl, pgpText, 0, speed, false, 32); // PGP key disabled
     await writeTo(styleEl, styleText[3], 0, speed, true, 1);
+    done = true;
   }
   // Flow control straight from the ghettos of Milwaukee
   catch(e) {
@@ -105,7 +106,9 @@ async function writeTo(el, message, index, interval, mirrorToStyle, charsPerInte
 
   // Schedule another write.
   if (index < message.length) {
-    let thisInterval = interval;
+    // Always base delays on the current global speed so the slider
+    // can affect the animation even while it's running.
+    let thisInterval = speed;
     let thisSlice = message.slice(index - 2, index + 1);
     if (comma.test(thisSlice)) thisInterval = interval * 30;
     if (endOfBlock.test(thisSlice)) thisInterval = interval * 50;
@@ -169,7 +172,12 @@ function createEventHandlers() {
   // Skip anim on click to skipAnimation
   skipAnimationEl.addEventListener('click', function(e) {
     e.preventDefault();
-    animationSkipped = true;
+    if (done) {
+      // Replay the entire experience
+      window.location.reload();
+    } else {
+      animationSkipped = true;
+    }
   });
 
   pauseEl.addEventListener('click', function(e) {
@@ -181,6 +189,21 @@ function createEventHandlers() {
       pauseEl.textContent = "Resume >>";
       paused = true;
     }
+  });
+}
+
+//
+// Attach speed control slider to the global speed variable.
+//
+function attachSpeedControl() {
+  const speedRange = document.getElementById('speed-range');
+  if (!speedRange) return;
+
+  speedRange.addEventListener('input', (e) => {
+    const value = Number(e.target.value);
+    if (!Number.isFinite(value)) return;
+    // Invert the value: 1ms is fastest, 100ms is slowest.
+    speed = 101 - value;
   });
 }
 
