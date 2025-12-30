@@ -215,27 +215,6 @@ function createWorkBox() {
   workEl.innerHTML = '<div class="text">' + replaceURLs(workText) + '</div>' +
                      '<div class="md">' + replaceURLs(md(workText)) + '<div>';
 
-  workEl.classList.add('flipped');
-  workEl.scrollTop = 9999;
-
-  // flippy floppy
-  let flipping = 0;
-  require('mouse-wheel')(workEl, async function(dx, dy) {
-    if (flipping) return;
-    let flipped = workEl.classList.contains('flipped');
-    let half = (workEl.scrollHeight - workEl.clientHeight) / 2;
-    let pastHalf = flipped ? workEl.scrollTop < half : workEl.scrollTop > half;
-
-    // If we're past half, flip the el.
-    if (pastHalf) {
-      workEl.classList.toggle('flipped');
-      flipping = true;
-      await Promise.delay(500);
-      workEl.scrollTop = flipped ? 0 : 9999;
-      flipping = false;
-    }
-
-    // Scroll. If we've flipped, flip the scroll direction.
-    workEl.scrollTop += (dy * (flipped ? -1 : 1));
-  }, true);
+  // No special flip behavior: let the browser handle scrolling naturally,
+  // just like the right-hand panel.
 }
