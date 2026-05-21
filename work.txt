@@ -9,7 +9,7 @@ About
 
 Tôi là một Kỹ sư phần mềm có định hướng chuyên sâu vào tối ưu hóa vận hành và hạ tầng hệ thống (DevOps). 
 Với nền tảng từ chuyên ngành Kỹ thuật phần mềm tại Đại học FPT, tôi đã từng bước chuyển dịch từ vai trò 
-phát triển ứng dụng di động (Mobile Developer) sang quản lý và vận hành hệ thống quy mô lớn tại VTNET. 
+phát triển ứng dụng di động (Mobile Developer) sang quản lý và vận hành hệ thống quy mô lớn. 
 Tôi luôn ưu tiên sự ổn định, tính bảo mật và hiệu suất trong mọi giải pháp kỹ thuật.
 
 Experience
