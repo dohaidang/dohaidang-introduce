@@ -1,7 +1,7 @@
 Đỗ Hải Đăng
 =========
 
-DevOps Engineer @ VTNET (Viettel Network)
+Software Developer @ Blameo Innovation
 Software Engineering | DevOps | Infrastructure Automation
 
 About
@@ -15,7 +15,7 @@ Tôi luôn ưu tiên sự ổn định, tính bảo mật và hiệu suất tron
 Experience
 -----------
 
-* VTNET (Viettel Network) | DevOps Engineer
+* Blameo Innovation | Software Developer
   Tập trung vào việc triển khai, vận hành và tự động hóa hạ tầng mạng lưới viễn thông.
 
 * SchoolDX | Mobile App Developer
